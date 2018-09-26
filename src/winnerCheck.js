@@ -1,3 +1,4 @@
+//Note: For testing purposes comment out the export line at the bottom of the page.
 var testGrid = [
     ["O","O","O","X","X","X","X"],
     ["X","O","X","X","O","X","X"],
