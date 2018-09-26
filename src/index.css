@@ -1,0 +1,103 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  width: available;
+}
+
+#root{
+  position: absolute;
+  top: 25%;
+  left: 33%;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.columns{
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.status {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: xx-large;
+  color: Black;
+}
+
+
+.square {
+  position: relative;
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  line-height: 34px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  overflow: hidden;
+}
+
+.square:after{
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 2.5px;
+  top: 2.5px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 2000px blue;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.win {
+  background: #f78;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
